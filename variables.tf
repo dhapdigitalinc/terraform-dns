@@ -1,22 +1,22 @@
-variable "XXXXX_com_dns_zone_id" {
+variable "dhap_com_dns_zone_id" {
   type    = "string"
-  default = "XXYXYXYXYXY"
+  default = "Z1HZCVDYDRKT6F"
 }
 
 variable "environment" {
-  type = "string"
-  description = "XXXX environment identifier "
+  type        = "string"
+  description = "dhap environment identifier "
 }
 
 variable "vpc_id" {
-  type = "string"
+  type        = "string"
   description = "ID of the VPC that will contain local Route53 zone and resources."
 }
 
 variable "dns_zone_name" {
   type        = "string"
   description = "Register local VPC resources in what Route53 zone"
-  default     = "XXXXX"
+  default     = "dhap"
 }
 
 variable "dns_record_ttl" {
@@ -25,11 +25,10 @@ variable "dns_record_ttl" {
   default     = "300"
 }
 
-
 variable "mongo_hosts" {
-  type    = "list"
+  type        = "list"
   description = "List of Mongo endpoints for this VPC"
-  default =  []
+  default     = []
 }
 
 variable "internal_services" {
@@ -43,21 +42,20 @@ variable "public_services" {
 }
 
 variable "adm_dns_zone_id" {
-  type = "string"
+  type        = "string"
   description = "Register this RDS instance in what Route53 admin zone for the region"
-  default = ""
+  default     = ""
 }
 
 variable "alb_internal_dns_name" {
-  type = "string"
+  type    = "string"
   default = ""
 }
 
 variable "alb_public_dns_name" {
-  type = "string"
+  type    = "string"
   default = ""
 }
-
 
 variable "memcache_nodes" {
   description = "Number of Memcache nodes in the cluster."
@@ -65,21 +63,21 @@ variable "memcache_nodes" {
 }
 
 variable "memcache_endpoint" {
-  type = "string"
+  type    = "string"
   default = ""
 }
 
 variable "memcache_configuration_endpoint_address" {
-  type = "string"
+  type    = "string"
   default = ""
 }
 
 variable "rds_db_instance_address" {
-  type = "string"
+  type    = "string"
   default = ""
 }
 
 variable "rds_instance_identifier" {
-  type = "string"
+  type    = "string"
   default = ""
 }
