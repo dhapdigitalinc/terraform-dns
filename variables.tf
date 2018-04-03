@@ -1,6 +1,6 @@
 variable "dhap_com_dns_zone_id" {
   type    = "string"
-  default = "Z1HZCVDYDRKT6F"
+  default = "Z9DTKRN5O1P8Z"
 }
 
 variable "environment" {
